@@ -1,0 +1,191 @@
+/*
+Goldilocks Approach to Responsive Web Design Boilerplate
+
+Author: Design by Front - @designbyfront
+Version: 0.1
+URL: http://www.goldilocksapproach.com
+----------------------------------------------------------------------------------------
+
+CONTENTS - GLOBAL.CSS
+-----------------------------------------
+1. RESET
+2. ROOT
+3. CORE TYPOGRAPHY
+4. LINKS
+5. GLOBAL LAYOUT & GLOBAL CUSTOM TYPOGRAPHY
+6. CUSTOM LAYOUT & TYPOGRAPHY (Baby bear)
+7. BROWSER AND NON-SEMANTIC STYLING
+
+CONTENTS - LAYOUT.CSS
+-----------------------------------------
+8. CUSTOM LAYOUT & TYPOGRAPHY (Daddy bear)
+9. CUSTOM LAYOUT & TYPOGRAPHY (Mummy bear)
+
+*/
+
+
+/* 1. RESET
+----------------------------------------------------------------------------------------*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size:100%;
+  font: inherit;
+  vertical-align: baseline;
+  }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+  }
+  
+  
+/* 2. ROOT
+----------------------------------------------------------------------------------------*/
+html { 
+  overflow-y: scroll;
+  background: #FFF;
+  }
+
+/* /ht Ethan Marcotte - http://front.ie/l8rJaA */
+img, embed, object, video { max-width: 100%; }
+.ie6 img.full, .ie6 object.full, .ie6 embed, .ie6 video { width: 100%; }
+
+
+/* 3. CORE TYPOGRAPHY
+----------------------------------------------------------------------------------------*/
+body {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1em;
+  line-height: 1.618em;
+  color: #333;
+  }
+
+h1, h2, h3, h4, h5, h6 {
+  margin-bottom: 0.809em;
+  line-height: 1em;
+  }
+
+p, ul, ol, dl, blockquote {
+    font-size: 1em;
+    line-height: 1.618em;
+    margin-bottom: 1.618em; 
+    max-width: 30em; /* Optimal width for long-form text */
+  }
+    
+ul { list-style-type: disc; margin-left: 1.618em; }
+ol { list-style-type: decimal; margin-left: 1.618em; }
+nav ul, nav ol { list-style: none; margin: 0; padding: 0;}
+
+b, strong { font-weight: bold; }
+i, em { font-style: italic; }
+small { font-size: 80%; }
+
+
+/* 4. LINKS
+----------------------------------------------------------------------------------------*/
+a, a:visited { outline: none; color: #439BBD; text-decoration: underline; }  
+a:hover { outline: none; text-decoration:none; }  
+a:active, a:focus { outline: none; }
+
+
+/* 5. GLOBAL LAYOUT & GLOBAL CUSTOM TYPOGRAPHY
+----------------------------------------------------------------------------------------*/
+
+body { background: #fbfbf1; font: 1em/1.618em georgia, serif; color: #333; padding: 0.5em; }
+
+
+/* 6. CUSTOM LAYOUT & TYPOGRAPHY (Baby bear)
+----------------------------------------------------------------------------------------*/
+
+article header h2, section h3 { font-size: 1.9em; }
+aside img { margin-top: 0.5em; border: 1px dotted #d0d0d0; }
+p.image-caption { font-style: italic; font-size: 0.8em; margin-top: 1em; }
+
+#container > header { padding-bottom: 1.9em; color: #666; background: url('../images/header_bg.png') 0 bottom repeat-x; margin: 1em 0 0; }
+#container > header h1 { display: inline-block; float: left; }
+#container > header h1 img { max-width: 12em; margin: 0.5em 0 0 3.75em; }
+#container > header .hours { display: inline-block; float: left; width: 10em; line-height: 1.4em; margin-right: 8em; display: none; }
+#container > header address { display: inline-block; float: left; line-height: 1.4em; width: 20em; text-align: center; }
+#container > header address a { color: #666; text-decoration: none; border-bottom: 1px solid; }
+
+.map { border-top: 0px solid #ccc; margin-bottom: 1em; }
+.welcome { text-align: center; font-size: 1.2em; }
+
+nav { margin: 0; padding: 1em 0 1.3em; }
+nav ul { max-width: 56em; text-align: left; }
+nav ul li { display: block; }
+nav ul li a { color: #000; font-size: 1.4em; text-decoration: none; padding: 0 0 0.3em; white-space: nowrap; }
+nav ul li a:hover { text-decoration: underline; }
+nav ul li a:visited { color: #000; }
+
+#carousel { /*height: 22em;*/ margin-bottom: 0.75em; }
+#photo-thumbs, #photo-slider { float: left; }
+#photo-thumbs { display: none; }
+#photo-slider { width: 19em; }
+a.thumbnail { width: 79px; height: 324px; display: block; float: left; text-indent: -9999px; margin-right: 3px; opacity: 0.5; }
+a.thumbnail:hover { opacity: 1; }
+
+footer { font-size: 0.9em; padding-top: 1.9em; color: #666; background: url('../images/footer_bg.png') 0 top repeat-x; margin-top: 1.4em; }
+footer .copy { float: left; }
+footer .reality { float: left; }
+
+aside.side-menu { margin: 0 4em 0 0; }
+aside.side-menu h2 { margin: 1em 0 0.3em; font-size: 1.5em; }
+
+aside .menu-categories { list-style: none; padding: 0; margin: 0 0 2em; }
+aside .menu-categories li a { color: #333; margin: 0 0 0.5em; display: block; }
+aside .menu-categories li.active a { font-weight: bold; text-decoration: none; }
+
+article.menu { margin: 0 0 2.75em; border-top: 1px solid #555; border-bottom: 0 none; }
+article.first { border-top: 1px solid #555; }
+.menu-list { float: left; }
+.menu-list h2 { font-style: italic; }
+.menu-item { margin: 0 0 1.25em; position: relative; background: url('../images/menu_bg.png') 0 0.9em repeat-x; height: 3.8em; }
+	.menu-item.caption { margin: 0 0 0.75em; height: auto; background: none; color: #999; font-size: 0.8em; }
+.menu-item .title { color: #000; font-size: 1.2em; background: #fbfbf1; float: left; padding-right: 0.2em;}
+	.menu-item.caption .title { color: #999; }
+.menu-item .receipt { font-style: italic; font-size: 0.8em; line-height: 1.3em; position: absolute; bottom: 0; left: 0; }
+.menu-item .price { background: #FBFBF1;padding-left: 0.2em;float: right; margin-left: 0.5em;}
+.menu-item .weight { font-style: normal; color: #999; }
+
+.afisha-columns aside { width: 24em; }
+.afisha-columns aside img { margin-top: 0; }
+.afisha-columns .column { margin-right: 0; width: 18em; }
+.afisha-columns .column.text { width: 18em; }
+.afisha-columns .column.text p { max-width: 53em; }
+
+.vac-columns .column { margin-right: 2.5em; width: 16em; }
+.vac-columns .column h2 { font-size: 1.4em; margin: 1em 0; font-weight: normal; }
+
+.column.short { width: 10em; margin: 0 4em; }
+.column.short h3 { font-size: 1.4em; }
+.column.short a { color: #666; text-decoration: none; border-bottom: 1px solid; }
+.ya-map { border-top: 1px solid #555; border: 1px dotted #d0d0d0; }
+
+#contacts-form { width: 100%; }
+#contacts-form label { display: block; margin: 0.5em 0 0.25em; font-style: italic; }
+#contacts-form input, textarea { width: 100%; padding: 0.5em; border: 1px solid #ccc; -webkit-border-radius: 2px; -moz-border-radius: 2px; border-radius: 2px; }
+#submit { background: #AC2727; color: white; border: 1px solid #AC2727; border-radius: 2px; padding: 0.5em 1em; }
+
+.column.left-contacts { margin-right: 2em; margin-top: 1.5em; }
+.column.right-contacts { width: 16em; }
+.ya-map, #ymaps-map-id_133876530959542054863 { width: 19em; height: 15em; }
+
+/* 7. BROWSER AND NON-SEMANTIC STYLING
+----------------------------------------------------------------------------------------*/
+.cf:before, .cf:after { content: ""; display: block; }
+.cf:after { clear: both; }
+.ie6 .cf { zoom: 1 }

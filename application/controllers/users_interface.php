@@ -211,6 +211,25 @@ class Users_interface extends CI_Controller{
 		$this->load->view("users_interface/contacts",$pagevar);
 	}
 	
+	public function vakansii(){
+		
+		$pagevar = array(
+			'title'			=> 'Ресторан-бар Нью-Йорк :: Контактная информация',
+			'description'	=> 'Ресторан-бар New York',
+			'title'			=> 'New-York.ru',
+			'author'		=> '',
+			'baseurl' 		=> base_url(),
+			'loginstatus'	=> $this->loginstatus,
+			'userinfo'		=> $this->user,
+			'msgs'			=> $this->session->userdata('msgs'),
+			'msgr'			=> $this->session->userdata('msgr')
+		);
+		$this->session->unset_userdata('msgs');
+		$this->session->unset_userdata('msgr');
+		
+		$this->load->view("users_interface/vakansii",$pagevar);
+	}
+	
 	public function admin_login(){
 	
 		$pagevar = array(

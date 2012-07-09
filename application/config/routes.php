@@ -10,6 +10,7 @@ $route['menu'] 		= "users_interface/menu";
 $route['menu/:any'] = "users_interface/menu";
 $route['afisha'] 	= "users_interface/afisha";
 $route['contacts'] 	= "users_interface/contacts";
+$route['vakansii'] 	= "users_interface/vakansii";
 $route['admin'] 	= "users_interface/admin_login";
 
 /***************************************************	ADMIN INTRERFACE	***********************************************/

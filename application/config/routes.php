@@ -9,8 +9,13 @@ $route['about'] 	= "users_interface/about";
 $route['menu'] 		= "users_interface/menu";
 $route['menu/:any'] = "users_interface/menu";
 $route['afisha'] 	= "users_interface/afisha";
+$route['akcii'] 	= "users_interface/akcii";
 $route['contacts'] 	= "users_interface/contacts";
 $route['vakansii'] 	= "users_interface/vakansii";
+$route['arenda-banketnogo-zala'] = "users_interface/banketi";
+$route['provedenie-svadbi'] = "users_interface/banketi_svadbi";
+$route['provedenie-dnya-rogdeniya'] = "users_interface/banketi_birthday";
+$route['provedenie-korporativov'] = "users_interface/banketi_korporativi";
 $route['admin'] 	= "users_interface/admin_login";
 
 /***************************************************	ADMIN INTRERFACE	***********************************************/

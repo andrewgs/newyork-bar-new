@@ -96,7 +96,7 @@ small { font-size: 80%; }
 
 /* 4. LINKS
 ----------------------------------------------------------------------------------------*/
-a, a:visited { outline: none; color: #439BBD; text-decoration: underline; }  
+a, a:visited { outline: none; color: #666; text-decoration: underline; }  
 a:hover { outline: none; text-decoration:none; }  
 a:active, a:focus { outline: none; }
 
@@ -104,17 +104,17 @@ a:active, a:focus { outline: none; }
 /* 5. GLOBAL LAYOUT & GLOBAL CUSTOM TYPOGRAPHY
 ----------------------------------------------------------------------------------------*/
 
-body { background: #fbfbf1; font: 1em/1.618em georgia, serif; color: #333; padding: 0.5em; }
+body { background: #faede5; font: 1em/1.618em georgia, serif; color: #333; padding: 0.5em; }
 
 
 /* 6. CUSTOM LAYOUT & TYPOGRAPHY (Baby bear)
 ----------------------------------------------------------------------------------------*/
 
-article header h2, section h3 { font-size: 1.9em; }
+article header h1, article header h2, section h3 { font-size: 1.9em; }
 aside img { margin-top: 0.5em; border: 1px dotted #d0d0d0; }
 p.image-caption { font-style: italic; font-size: 0.8em; margin-top: 1em; }
 
-#container > header { padding-bottom: 1.9em; color: #666; background: url('../images/header_bg.png') 0 bottom repeat-x; margin: 1em 0 0; }
+#container > header { padding-bottom: 1.9em; color: #666; background: url('../images/header_bg.png') 0 bottom repeat-x; margin: 0.5em 0 0; max-width: 56em; }
 #container > header h1, #container > header #logo { display: inline-block; float: left; }
 #container > header h1 img, #container > header #logo img { max-width: 12em; margin: 0.5em 0 0 3.75em; border: 0 none; }
 #container > header .hours { display: inline-block; float: left; width: 10em; line-height: 1.4em; margin-right: 8em; display: none; }
@@ -131,41 +131,54 @@ nav ul li a { color: #000; font-size: 1.4em; text-decoration: none; padding: 0 0
 nav ul li a:hover { text-decoration: underline; }
 nav ul li a:visited { color: #000; }
 
+footer { max-width: 62.25em; }
+footer nav { margin: 0 0 0.5em; padding: 0 0 0.75em; border-bottom: 1px solid #DBDBDB; }
+footer nav ul li a { font-size: 1em; padding: 0; margin: 0 1em 0 0; color: #333 !important; }
+
 #carousel { /*height: 22em;*/ margin-bottom: 0.75em; }
+.photo-wrapper { position: relative; min-height: 11em; }
+	.photo-wrapper .promo-banner { position: absolute; left: -0.25em; top: 0; box-shadow: 0 0 5px #c0c0c0; height: 325px; border-radius: 3px; }
 #photo-thumbs, #photo-slider { float: left; }
 #photo-thumbs { display: none; }
 #photo-slider { width: 19em; }
 a.thumbnail { width: 79px; height: 324px; display: block; float: left; text-indent: -9999px; margin-right: 3px; opacity: 0.5; }
 a.thumbnail:hover { opacity: 1; }
+.event-title { position: absolute; top: 0; left: 5.7em; font: 16px/18px Georgia, serif; color: #fff; text-shadow: 0 0 2px #999; background: rgba(0, 0, 0, 0.58); padding: 0.65em 0.75em; }
+.event-title p { margin-bottom: 0; }
+.photo-wrapper iframe { border-radius: 2px; box-shadow: 0 0 5px #999;}
 
 footer { font-size: 0.9em; padding-top: 1.9em; color: #666; background: url('../images/footer_bg.png') 0 top repeat-x; margin-top: 1.4em; }
 footer .copy { float: left; }
 footer .reality { float: left; }
+footer .reality a { display: inline-block; border-bottom: 1px solid; line-height: 1.15em; text-decoration: none; }
 
 aside.side-menu { margin: 0 4em 0 0; }
 aside.side-menu h2 { margin: 1em 0 0.3em; font-size: 1.5em; } 
 
-aside .menu-categories { list-style: none; padding: 0; margin: 3.5em 0 2em; }
+aside .menu-categories { list-style: none; padding: 0; margin: 1em 0 2em; }
 aside .menu-categories li a { color: #333; margin: 0 0 0.5em; display: block; }
 aside .menu-categories li.active a { font-weight: bold; text-decoration: none; }
 
+article { max-width: 56em; }
 article.menu { margin: 0 0 2.75em; border-top: 1px solid #555; border-bottom: 0 none; }
 article.first { border-top: 1px solid #555; }
 .menu-list { float: left; }
 .menu-list h2 { font-style: italic; }
-.menu-item { margin: 0 0 1.25em; position: relative; background: url('../images/menu_bg.png') 0 0.9em repeat-x; height: 3.8em; }
+.menu-item { margin: 0 0 1.25em; position: relative; background: url('../images/menu_bg.png') 0 0.9em repeat-x; height: 5.4em; }
 	.menu-item.caption { margin: 0 0 0.75em; height: auto; background: none; color: #999; font-size: 0.8em; display: none; }
-.menu-item .title { color: #000; font-size: 1.2em; background: #fbeee6; float: left; padding-right: 0.2em;}
+.menu-item .title { color: #000; font-size: 1.2em; background: #FBF4EF; float: left; padding-right: 0.2em;}
 	.menu-item.caption .title { color: #999; }
 .menu-item .receipt { font-style: italic; font-size: 0.8em; line-height: 1.3em; position: absolute; bottom: 0; left: 0; }
-.menu-item .price { background: #fbeee6;padding-left: 0.2em;float: right; margin-left: 0.5em;}
+.menu-item .price { background: #FBF4EF; padding-left: 0.2em;float: right; margin-left: 0.5em;}
 .menu-item .weight { font-style: normal; color: #999; }
 
 .afisha-columns aside { width: 24em; }
-.afisha-columns aside img { margin-top: 0; }
+.afisha-columns aside img { margin-top: 0.35em; }
 .afisha-columns .column { margin-right: 0; width: 18em; }
 .afisha-columns .column.text { width: 18em; }
 .afisha-columns .column.text p { max-width: 53em; }
+.afisha-columns .column ul { list-style-image: url('../images/star.png'); max-width: 40em; }
+.afisha-columns .column ul li { font-size: 0.95em; font-style: italic; line-height: 2.1em; color: #777; padding-left: 0.25em; }
 
 .vac-columns .column { margin-right: 2.5em; width: 16em; }
 .vac-columns .column h2 { font-size: 1.4em; margin: 1em 0; font-weight: normal; }
@@ -178,7 +191,7 @@ article.first { border-top: 1px solid #555; }
 #contacts-form { width: 100%; }
 #contacts-form label { display: block; margin: 0.5em 0 0.25em; font-style: italic; }
 #contacts-form input, textarea { width: 100%; padding: 0.5em; border: 1px solid #ccc; -webkit-border-radius: 2px; -moz-border-radius: 2px; border-radius: 2px; }
-#submit { background: #AC2727; color: white; border: 1px solid #AC2727; border-radius: 2px; padding: 0.5em 1em; }
+#submit { background: #AC2727; color: white; border: 1px solid #AC2727; border-radius: 2px; padding: 0.5em 1em; margin-top: 1em; }
 
 .column.left-contacts { margin-right: 2em; margin-top: 1.5em; }
 .column.right-contacts { width: 16em; }
@@ -186,6 +199,23 @@ article.first { border-top: 1px solid #555; }
 
 address span.skype_pnh_container, address span.skype_pnh_container * { font-size: 1em !important; font-weight: normal !important; font-family: georgia, serif !important; color: #666 !important; }
 .red-phone span.skype_pnh_container, .red-phone span.skype_pnh_container * { font-size: 0.95em !important; font-weight: normal !important; font-family: georgia, serif !important; color: #666 !important; }
+
+#container { position: relative; }
+article a { color: #666; }
+.top-shadow { background: url('../images/paper_top.png') center bottom no-repeat; width: 100%; height: 8px; padding: 0.25em 0 0; opacity: 0.5; }
+.bottom-shadow { background: url('../images/paper_bottom.png') center top no-repeat; width: 100%; height: 8px; padding: 0 0 0.5em; opacity: 0.5; }
+.left-shadow { background: url('../images/paper_left_.png') 0 0 repeat-y; width: 22px; height: 100%; position: absolute; left: 0; top: 0; }
+.right-shadow { background: url('../images/paper_right_.jpg') 0 0 repeat-y; width: 16px; height: 100%; position: absolute; right: -0.5em; top: 0; opacity: 0.7; -webkit-border-radius: 0 3px 15px 0; -moz-border-radius: 0 3px 15px 0; border-radius: 0 3px 15px 0; }
+.top-shadow, .bottom-shadow, .left-shadow, .right-shadow { display: none }
+
+aside .promo-block { display: none; }
+strong.offer { display: block; font-style: italic; font-weight: normal; line-height: 1.5em; margin: 0 0 1em; max-width: 40em; }
+
+.left { float: left; margin: 0 1em 0 0; }
+h2 .right { float: right; float: right; font-size: 23px; color: #555; }
+p.subnav-links { max-width: 40em; }
+p.subnav-links a { font-size: 0.85em; margin-right: 1em; display: inline-block; text-decoration: none; border-bottom: 1px solid; line-height: 1.2em; }
+.bordered { -webkit-border-radius: 2px; -moz-border-radius: 2px; border-radius: 2px; box-shadow: 0 0 5px #999; margin: 0.5em 0 0; }
 
 /* 7. BROWSER AND NON-SEMANTIC STYLING
 ----------------------------------------------------------------------------------------*/

@@ -7,6 +7,7 @@
 <?=$this->load->view("users_interface/includes/head");?>
 
 <body>
+	<div class="top-shadow"> </div>
 	<div id="container" class="cf">
 		<?=$this->load->view("users_interface/includes/header");?>
 	
@@ -52,6 +53,7 @@
 		</div>
 		<?=$this->load->view("users_interface/includes/footer");?>
 	</div>
+	<div class="bottom-shadow"></div>
 	<?=$this->load->view("users_interface/includes/scripts");?>
 	<script type="text/javascript">
 	$(document).ready(function(){

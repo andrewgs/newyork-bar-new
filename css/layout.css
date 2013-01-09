@@ -1,13 +1,10 @@
 /* 8. CUSTOM LAYOUT & TYPOGRAPHY (Daddy bear)
 ----------------------------------------------------------------------------------------*/
 #container {
-	background: url('../images/main_bg.jpg') center top fixed #f6ebe5; /* #FBFBF1 */
+	background: #fbf4ef; /*#faede5;*/ /* #FBFBF1 */ /* url('../images/main_bg.jpg') center top fixed  */
 	padding: 1.618em;
 	margin: 0 auto; 
-	max-width: 56em;
-	border: 1px solid #999;
-	border-style: none solid;
-	box-shadow: 0 0 15px #000;
+	max-width: 58em;
 }
 
 article { border-bottom: 1px solid #dbdbdb; padding: 1.5em 0 0.5em; }
@@ -24,16 +21,16 @@ aside.wide { width: 26em; }
 ----------------------------------------------------------------------------------------*/
 
 @media screen and (min-width: 30em) and (max-width: 63.236em) { 
-	#container { width: 38em; }
+	#container { width: 38em; border: 1px solid #999; border-style: none solid; -webkit-box-shadow: 0 0 15px #555; -moz-box-shadow: 0 0 15px #555; box-shadow: 0 0 15px #555; }
 	#container > header h1, #container > header #logo { margin-right: 8.4em; }
-	body { background: url('../images/bg_.jpg') 0 0 fixed #fbfbf1; padding: 0; }
+	body { background: url('../images/whitey.png'); padding: 0; }
 	footer .reality { float: right; }
 	#container > header h1 img, #container > header #logo img { max-width: 16em; margin: 0.5em 2.65em 0 0; }
 	#container > header address { width: 11em; text-align: right;  }
 	#photo-slider { width: 31em; }
-	aside .menu-categories { float: left; min-width: 38em; }
+	aside .menu-categories { float: left; min-width: 38em; margin: 0; }
 	aside.side-menu { min-width: 38em; }
-	aside .promo-block { float: left; width: 17em; margin: 0 2em 2em 0; }	
+	aside .promo-block { float: left; width: 17em; margin: 0 2em 2em 0; display: block; }
 	.menu-list { min-width: 36em; }
 	.afisha-columns .column.text { width: 30em; }
 	.afisha-columns .column { width: 32em; }
@@ -42,20 +39,23 @@ aside.wide { width: 26em; }
 	.column.left-contacts .red-phone { font-size: 2.5em; line-height: 0.5em; margin-bottom: 1em; }
 	.column.left-contacts .red-email a { font-size: 1.6em; line-height: 0.5em; margin-bottom: 1em; text-decoration: none; border-bottom: 1px solid; color: #999; }
 	.column.left-contacts { margin-top: 0; }
+	.photo-wrapper { min-height: 13.5em; }
 }
 
 @media screen and (min-width: 63.236em) {
+	#container { padding: 1.618em 1em 1.618em 2.5em; -webkit-box-shadow: 7px 0 15px #555; -moz-box-shadow: 7px 0 15px #555; box-shadow: 7px 0 15px #555; -webkit-border-radius: 0 3px 10px 0; -moz-border-radius: 0 3px 10px 0; border-radius: 0 3px 10px 0; }
 	#container > header .hours { display: inline-block; }
 	#container > header h1, #container > header #logo { margin-right: 8.4em; }
-	/*nav ul { text-align: center; }*/	
 	nav ul li a { margin: 0 1.5em 0 0; }
 	nav ul li { display: inline; }
 	#photo-thumbs { display: block; }
-	body { background: url('../images/bg_f.jpg') center top fixed #fbfbf1; padding: 0; }
+	body { background: url('../images/whitey.png'); padding: 0; }
 	footer .reality { float: right; }
 	#container > header h1 img, #container > header #logo img { max-width: 16em; margin: 0.5em 1.25em 0; }
 	#container > header address { width: 11em; text-align: right;  }
 	#photo-slider { width: 31em; }
+	aside .promo-block { display: block; }
+	aside .menu-categories { margin-top: 3.5em; }
 	.menu-list { min-width: 36em; }
 	.afisha-columns .column.text { width: 56em; }
 	.afisha-columns .column { width: 32em; }
@@ -64,4 +64,6 @@ aside.wide { width: 26em; }
 	.column.left-contacts .red-phone { font-size: 2.5em; line-height: 0.5em; margin-bottom: 1em; }
 	.column.left-contacts .red-email a { font-size: 1.6em; line-height: 0.5em; margin-bottom: 1em; text-decoration: none; border-bottom: 1px solid; color: #999; }
 	.column.left-contacts { margin-top: 0; }
+	.top-shadow, .bottom-shadow, .left-shadow, .right-shadow { display: block; }
+	.photo-wrapper { min-height: 20.5em; }
 }

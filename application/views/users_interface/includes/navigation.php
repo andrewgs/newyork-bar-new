@@ -2,8 +2,10 @@
 	<ul>
 		<li><?=anchor('/','Главная');?></li>
 		<li><?=anchor('menu','Меню');?></li>
+		<li><?=anchor('arenda-banketnogo-zala','Банкеты');?></li>
 		<li><?=anchor('afisha','Афиша');?></li>
 		<li><?=anchor('vakansii','Вакансии');?></li>
-		<li><?=anchor('contacts','Контактная информация');?></li>
+		<li><?=anchor('akcii','Акции');?></li>
+		<li><?=anchor('contacts','Контакты');?></li>
 	</ul>
 </nav>

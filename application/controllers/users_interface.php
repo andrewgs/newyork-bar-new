@@ -141,7 +141,6 @@ class Users_interface extends CI_Controller{
 		$pagevar = array(
 			'title'			=> 'Ресторан-бар Нью-Йорк :: Джазовые вечера :: Спортивные трансляции :: Живая музыка ',
 			'description'	=> 'Ресторан-бар New York отличает оригинальный дизайн интерьера и разнообразная кухня. Здесь можно отдохнуть от ростовской суеты и окунуться в теплую атмосферу вечернего Нью-Йорка. Вы можете насладиться живой музыкой или посмотреть спортивные трансляции.',
-			'title'			=> 'New-York.ru',
 			'author'		=> '',
 			'baseurl' 		=> base_url(),
 			'loginstatus'	=> $this->loginstatus,
@@ -154,13 +153,102 @@ class Users_interface extends CI_Controller{
 		
 		$this->load->view("users_interface/afisha",$pagevar);
 	}
+
+	public function banketi(){
+		
+		$pagevar = array(
+			'title'			=> 'Ресторан-бар Нью-Йорк :: Банкетный зал :: Организация банкетов и торжеств',
+			'description'	=> 'Ресторан-бар New York с удовольствием организует ваш банкет. В вашем распоряжении большой просторный зал на 80 человек с отдельной VIP зоной.',
+			'author'		=> '',
+			'baseurl' 		=> base_url(),
+			'loginstatus'	=> $this->loginstatus,
+			'userinfo'		=> $this->user,
+			'msgs'			=> $this->session->userdata('msgs'),
+			'msgr'			=> $this->session->userdata('msgr')
+		);
+		$this->session->unset_userdata('msgs');
+		$this->session->unset_userdata('msgr');
+		
+		$this->load->view("users_interface/banketi",$pagevar);
+	}
+	
+	public function banketi_svadbi(){
+		
+		$pagevar = array(
+			'title'			=> 'Ресторан-бар Нью-Йорк :: Кафе для проведения свадеб и банкетов в Ростове-на-Дону',
+			'description'	=> 'Ресторан-бар New York с удовольствием организует вашу свадьбу. В вашем распоряжении большой просторный зал на 80 человек с отдельной VIP зоной.',
+			'author'		=> '',
+			'baseurl' 		=> base_url(),
+			'loginstatus'	=> $this->loginstatus,
+			'userinfo'		=> $this->user,
+			'msgs'			=> $this->session->userdata('msgs'),
+			'msgr'			=> $this->session->userdata('msgr')
+		);
+		$this->session->unset_userdata('msgs');
+		$this->session->unset_userdata('msgr');
+		
+		$this->load->view("users_interface/banketi_svadbi",$pagevar);
+	}	
+
+	public function banketi_birthday(){
+		
+		$pagevar = array(
+			'title'			=> 'Ресторан-бар Нью-Йорк :: Кафе для проведения дней рождения и юбилеев в Ростове-на-Дону',
+			'description'	=> 'Ресторан-бар New York с удовольствием организует ваш день рождения или юбилей. В вашем распоряжении большой просторный зал на 80 человек с отдельной VIP зоной.',
+			'author'		=> '',
+			'baseurl' 		=> base_url(),
+			'loginstatus'	=> $this->loginstatus,
+			'userinfo'		=> $this->user,
+			'msgs'			=> $this->session->userdata('msgs'),
+			'msgr'			=> $this->session->userdata('msgr')
+		);
+		$this->session->unset_userdata('msgs');
+		$this->session->unset_userdata('msgr');
+		
+		$this->load->view("users_interface/banketi_birthday",$pagevar);
+	}
+
+	public function banketi_korporativi(){
+		
+		$pagevar = array(
+			'title'			=> 'Ресторан-бар Нью-Йорк :: Кафе для проведения корпоративов в Ростове-на-Дону',
+			'description'	=> 'Ресторан-бар New York с удовольствием организует ваш корпоратив. В вашем распоряжении большой просторный зал на 80 человек с отдельной VIP зоной.',
+			'author'		=> '',
+			'baseurl' 		=> base_url(),
+			'loginstatus'	=> $this->loginstatus,
+			'userinfo'		=> $this->user,
+			'msgs'			=> $this->session->userdata('msgs'),
+			'msgr'			=> $this->session->userdata('msgr')
+		);
+		$this->session->unset_userdata('msgs');
+		$this->session->unset_userdata('msgr');
+		
+		$this->load->view("users_interface/banketi_korporativi",$pagevar);
+	}
+	
+	public function akcii(){
+		
+		$pagevar = array(
+			'title'			=> 'Ресторан-бар Нью-Йорк :: Акции и специальные предложения',
+			'description'	=> 'С сегодняшнего дня стартуют новые заманчивые акции для наших завсегдатаев дорогих нам  посетителей.',
+			'author'		=> '',
+			'baseurl' 		=> base_url(),
+			'loginstatus'	=> $this->loginstatus,
+			'userinfo'		=> $this->user,
+			'msgs'			=> $this->session->userdata('msgs'),
+			'msgr'			=> $this->session->userdata('msgr')
+		);
+		$this->session->unset_userdata('msgs');
+		$this->session->unset_userdata('msgr');
+		
+		$this->load->view("users_interface/akcii",$pagevar);
+	}
 	
 	public function contacts(){
 		
 		$pagevar = array(
 			'title'			=> 'Ресторан-бар Нью-Йорк :: Контактная информация',
 			'description'	=> 'Ресторан-бар New York расположен недалеко от центра города и предлагает своим посетителям возможность уехать из ресторана на оплачиваемом такси.',
-			'title'			=> 'New-York.ru',
 			'author'		=> '',
 			'baseurl' 		=> base_url(),
 			'loginstatus'	=> $this->loginstatus,
@@ -216,7 +304,6 @@ class Users_interface extends CI_Controller{
 		$pagevar = array(
 			'title'			=> 'Ресторан-бар Нью-Йорк :: Контактная информация',
 			'description'	=> 'Ресторан-бар New York',
-			'title'			=> 'New-York.ru',
 			'author'		=> '',
 			'baseurl' 		=> base_url(),
 			'loginstatus'	=> $this->loginstatus,

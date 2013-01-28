@@ -137,7 +137,7 @@ footer nav ul li a { font-size: 1em; padding: 0; margin: 0 1em 0 0; color: #333 
 
 #carousel { /*height: 22em;*/ margin-bottom: 0.75em; }
 .photo-wrapper { position: relative; min-height: 11em; }
-	.photo-wrapper .promo-banner { position: absolute; left: -0.25em; top: 0; box-shadow: 0 0 5px #c0c0c0; height: 325px; border-radius: 3px; }
+	.photo-wrapper .promo-banner { position: absolute; left: -0.25em; top: 0; border-radius: 3px; }
 #photo-thumbs, #photo-slider { float: left; }
 #photo-thumbs { display: none; }
 #photo-slider { width: 19em; }

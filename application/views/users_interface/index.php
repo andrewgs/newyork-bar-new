@@ -25,9 +25,14 @@
 					</a>
 					-->
 					<a class="promo-banner" href="<?=$baseurl;?>afisha">
-						<img src="<?=$baseurl;?>images/nyc_ny.png" alt="Новый год в Нью Йорке" alt="image" />
+						<img src="<?=$baseurl;?>images/avakova.jpg" alt="Выступление группы Music for the soul" />
 					</a>
-					
+					<a class="promo-banner" href="<?=$baseurl;?>menu/kalyan">
+						<img src="<?=$baseurl;?>images/kalyan.jpg" alt="Обновленное кальянное меню" />
+					</a>
+					<a class="promo-banner" href="<?=$baseurl;?>afisha">
+						<img src="<?=$baseurl;?>images/disko80s.jpg" alt="Дискотека 80-х" />
+					</a>
 					<!--
 					<iframe src="http://player.vimeo.com/video/43527522?title=0&amp;byline=0&amp;autoplay=0" width="896" height="500" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
 					<div class="event-title">
@@ -131,13 +136,11 @@
 				} 
 			});
 			*/
-			/*
 			$('div.photo-wrapper').cycle({
 				fx: 'fade',
-				//speed: 'fast',
-				timeout: 7000
+				//speed: 'slow',
+				timeout: 5000
 			});
-			*/
 		});
 	</script>
 </body>

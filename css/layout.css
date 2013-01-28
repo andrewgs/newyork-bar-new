@@ -22,7 +22,7 @@ aside.wide { width: 26em; }
 
 @media screen and (min-width: 30em) and (max-width: 63.236em) { 
 	#container { width: 38em; border: 1px solid #999; border-style: none solid; -webkit-box-shadow: 0 0 15px #555; -moz-box-shadow: 0 0 15px #555; box-shadow: 0 0 15px #555; }
-	#container > header h1, #container > header #logo { margin-right: 8.4em; }
+	#container > header h1, #container > header #logo { margin-right: 7.4em; }
 	body { background: url('../images/whitey.png'); padding: 0; }
 	footer .reality { float: right; }
 	#container > header h1 img, #container > header #logo img { max-width: 16em; margin: 0.5em 2.65em 0 0; }
@@ -66,4 +66,5 @@ aside.wide { width: 26em; }
 	.column.left-contacts { margin-top: 0; }
 	.top-shadow, .bottom-shadow, .left-shadow, .right-shadow { display: block; }
 	.photo-wrapper { min-height: 20.5em; }
+	.photo-wrapper .promo-banner { box-shadow: 0 0 5px #c0c0c0; height: 325px; }
 }

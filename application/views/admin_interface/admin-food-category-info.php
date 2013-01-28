@@ -13,6 +13,9 @@
 			<h3>Список блюд (<?=$cname;?>)</h3>
 			<?php $this->load->view('alert_messages/alert-error');?>
 			<?php $this->load->view('alert_messages/alert-success');?>
+			<hr/>
+			<a href="#addFood" data-toggle="modal" title="Добавить блюдо"><button class="btn btn-primary" type="button"> Добавить блюдо </button></a>
+			<hr/>
 		<?php for($i=0;$i<count($foods);$i++):?>	
 			<table class="table table-bordered">
 				<tr>
